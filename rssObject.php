@@ -50,15 +50,15 @@ class rssObject
 	function setFeedProperties($pnSourceType, $pcAuthor, $pdPublishDate, $pcFeedTitle, $pcFeedDescription, $pcWebSiteURL, $pcCopyright, $pcManagingEditor, $pcLanguage, $pcWebMaster, $pcRSSVersion, $pcFeedCategory)
 	{
 		$this->lnSourceType			= $pnSourceType ;
-		$this->lcAuthor				= !empty($pcAuthor)?$pcAuthor:'Nathan Davies' ;
+		$this->lcAuthor				= !empty($pcAuthor)?$pcAuthor:'' ;
 		$this->ldPublishDate		= $pdPublishDate; // 12 aug 2008 13:30:56 GMT
 		$this->lcFeedTitle			= $pcFeedTitle ;
 		$this->lcFeedDescription	= $pcFeedDescription ;
-		$this->lcWebSiteURL			= !empty($pcWebSiteURL)?$pcWebSiteURL:"http://www.christianleadership.org" ; // main page of the site
+		$this->lcWebSiteURL			= !empty($pcWebSiteURL)?$pcWebSiteURL:"" ; // main page of the site
 		$this->lcCopyright			= $pcCopyright ;
-		$this->lcManagingEditor		= !empty($pcManagingEditor)?$pcManagingEditor:'Nathan.Davies@christianleadership.org (Nathan Davies)' ;
+		$this->lcManagingEditor		= !empty($pcManagingEditor)?$pcManagingEditor:'' ;
 		$this->lcLanguage			= !empty($pcLanguage)?$pcLanguage:'en' ;
-		$this->lcWebMaster			= !empty($pcWebMaster)?$pcWebMaster:'Nathan.Davies@christianleadership.org (Nathan Davies)' ;
+		$this->lcWebMaster			= !empty($pcWebMaster)?$pcWebMaster:'' ;
 		$this->lcRSSVersion			= !empty($pcRSSVersion)?$pcRSSVersion:"2.0" ;
 		$this->lcFeedCategory		= $pcFeedCategory ;
 	} // end of setFeedProperties function
