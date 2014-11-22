@@ -363,9 +363,9 @@ class userObject
 ------------------------------------------------------------*/
 	function ensureNewZappCredentials()
 	{
-		$this->lcNZAPIPWord	= 'apin6908k' ;
-		$this->lcNZUserName	= 'admin7238' ;
-		$this->lcNZCID		= '7215' ;
+		$this->lcNZAPIPWord	= '' ;
+		$this->lcNZUserName	= '' ;
+		$this->lcNZCID		= '' ;
 	}
 
 	function newZappCommunicator($pcNZServerURL)
